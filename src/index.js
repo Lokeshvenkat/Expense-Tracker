@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 import store from './redux/Store';
 import App from './App';
-import './index.module.css'; 
+import './index.css'; 
 import reportWebVitals from './reportWebVitals';
 
 // DO NOT TOUCH THE BELOW 3 LINES
