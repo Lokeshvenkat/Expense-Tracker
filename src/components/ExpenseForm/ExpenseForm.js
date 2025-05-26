@@ -6,7 +6,7 @@ import { addTransactionEntry } from "../../redux/transactionSlice";
 import { generateExpenseFormAlertMessage, validateExpenseForm } from "../../utilityFunctions/ExpenseFormMethods";
 import generateUniqueID from "../../utilityFunctions/GenerateIds";
 import { ADD } from "../../utilityFunctions/constants";
-import "./ExpenseForm.css";
+import "./ExpenseForm.module.css";
 
 const ExpenseForm = () => {
   // State variables to manage controlled form inputs
