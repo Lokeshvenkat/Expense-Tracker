@@ -1,13 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-
-// Updated imports based on the new folder structure:
 import AllBudgetInsights from "../AllBudgetInsights/AllBudgetInsights";
 import ExpenseForm from "../ExpenseForm/ExpenseForm";
 import TransactionTable from "../TransactionTable/TransactionTable";
-
-import "./TrackerPage.module.css"; // Assuming you renamed to module.css
+import "./TrackerPage.module.css"; 
 
 
 // TrackerPage component displays user's monthly expenditure tracker UI
