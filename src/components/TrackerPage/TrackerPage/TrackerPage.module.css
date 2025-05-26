@@ -1,0 +1,40 @@
+/* Main container for the tracker page */
+.tracker-page {
+  min-height: 80vh;       /* Ensures page takes at least 80% of viewport height */
+  width: 70vw;            /* Sets width to 70% of viewport width */
+  margin-top: 50px;       /* Adds space above the tracker page */
+  background-color: #eee; /* Light grey background for better readability */
+}
+
+/* Container for the title section on tracker page */
+.tracker-page-title {
+  display: flex;               /* Use flexbox for layout */
+  align-items: center;         /* Vertically center items */
+  margin-bottom: -20px;        /* Pulls content below upwards to reduce space */
+  justify-content: space-between; /* Space out children to edges (title left, button right) */
+}
+
+/* Styling the heading inside the tracker page */
+.tracker-page h2 {
+  margin: 30px;        /* General margin all around */
+  margin-left: 80px;   /* Extra left margin to push title away from left edge */
+}
+
+/* Styles for the button inside the title section */
+.tracker-page-title button {
+  cursor: pointer;          /* Shows pointer cursor on hover to indicate clickable */
+  margin-right: 100px;      /* Adds space between button and right edge */
+  padding: 6px 12px;        /* Padding inside button for better size */
+  font-weight: bolder;      /* Bold text for prominence */
+  font-size: 0.9rem;        /* Slightly smaller than normal text for subtlety */
+}
+
+/* Style for horizontal rules used as separators */
+hr {
+  display: block;             /* Makes sure hr behaves as a block element */
+  height: 1px;                /* Thin line */
+  border: 0;                  /* Remove default border */
+  border-top: 1px solid #ccc; /* Light gray line on top */
+  margin: 1em 0;              /* Vertical spacing around the line */
+  padding: 0;                 /* No padding */
+}
