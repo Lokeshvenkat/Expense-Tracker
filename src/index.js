@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/Store";
 import App from "./App";
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./ErrorPage/ErrorPage";
 import LandingPageForm from "./components/LandingPage/LandingPageForm";
 import TrackerPage from "./components/TrackerPage/TrackerPage";
 import "./index.css";
