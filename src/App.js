@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import styles from "./App.css";
 
