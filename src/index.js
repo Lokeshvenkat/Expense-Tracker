@@ -1,29 +1,50 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { createRoot } from 'react-dom/client';
-import store from './redux/Store';
-import App from './App';
-import './index.css'; 
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-// DO NOT TOUCH THE BELOW 3 LINES
+import App from "./App";
+import ErrorPage from "./ErrorPage";
+import LandingPageForm from "./components/LandingPage/LandingPageForm";
+import TrackerPage from "./components/TrackerPage/TrackerPage";
+import store from "./redux/Store";
+import reportWebVitals from "./reportWebVitals";
+
+import "./index.css";
+
+// Exposing Redux store for Cypress testing
 if (window.Cypress) {
   window.store = store;
 }
 
-const container = document.getElementById('root');
-const root = createRoot(container);
+// Creating the application router with nested routes and error handling
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <LandingPageForm />,
+      },
+      {
+        path: "/tracker",
+        element: <TrackerPage />,
+      },
+    ],
+    errorElement: <ErrorPage />,
+  },
+]);
 
+// Rendering the app at the root of the DOM
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
+      <RouterProvider router={appRouter} />
     </Provider>
   </React.StrictMode>
 );
 
-// DO NOT TOUCH THE BELOW LINE
+// Optional performance measurement
 reportWebVitals();
