@@ -1,7 +1,7 @@
 import React from "react";
 import TransactionDetailsTable from "./TransactionDetailsTable";
 import TransactionFilters from "./TransactionFilters";
-import "./TransactionTable.css";
+import "./TransactionTable.module.css";
 
 // TransactionTable component renders filters and detailed transaction data table
 const TransactionTable = () => {
