@@ -1,3 +1,13 @@
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import toast from "react-hot-toast";
+import { updateCategoricalExpense, updateTotalExpense } from "../../redux/expenseSlice";
+import { addTransactionEntry } from "../../redux/transactionSlice";
+import { generateExpenseFormAlertMessage, validateExpenseForm } from "../../utilityFunctions/ExpenseFormMethods";
+import generateUniqueID from "../../utilityFunctions/GenerateIds";
+import { ADD } from "../../utilityFunctions/constants";
+import "./ExpenseForm.css";
+
 const ExpenseForm = () => {
   // State variables to manage controlled form inputs
   // expenseName stores the name/description of the expense
