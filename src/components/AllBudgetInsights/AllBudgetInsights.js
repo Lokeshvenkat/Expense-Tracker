@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import "./AllBudgetInsights.css";
+import "./AllBudgetInsights.module.css";
 
 /**
  * LimitStatusPill Component
