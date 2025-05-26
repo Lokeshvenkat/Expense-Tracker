@@ -1,0 +1,36 @@
+/* Container for the entire expense form */
+.expense-form {
+  margin: 30px;
+  margin-left: 80px; /* extra left margin for alignment */
+  background-color: #ddd; /* light grey background */
+  min-height: 100px; /* minimum height */
+  width: 550px; /* fixed width */
+  padding: 20px; /* inner spacing */
+}
+
+/* Title of the expense form */
+.expense-form .title {
+  font-size: 1.2rem; /* slightly larger text */
+  font-weight: 600; /* semi-bold */
+  text-decoration: underline; /* underline for emphasis */
+}
+
+/* The <form> inside expense-form container */
+.expense-form form {
+  display: flex; /* flex layout */
+  flex-direction: column; /* vertical stacking */
+  row-gap: 10px; /* vertical space between form elements */
+  margin-top: 20px; /* spacing above the form */
+}
+
+/* Container grouping expense name and category inputs side by side */
+.expense-form-input {
+  display: flex; /* flex layout for horizontal alignment */
+  column-gap: 40px; /* horizontal space between inputs */
+}
+
+/* Style for submit button inside the form */
+.expense-form form button {
+  cursor: pointer; /* pointer cursor on hover */
+  width: 100px; /* fixed width for button */
+}
