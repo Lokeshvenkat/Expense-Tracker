@@ -1,0 +1,10 @@
+/* Container for the entire transaction details table */
+.transaction-details-table {
+  margin-top: 30px;        /* Adds space above the table for visual separation */
+  min-height: 300px;       /* Ensures the table has a minimum height even if there are no transactions */
+}
+
+/* Style for the delete button inside each transaction row */
+.transaction-delete-btn {
+  cursor: pointer;         /* Changes the cursor to a pointer on hover to indicate it's clickable */
+}
