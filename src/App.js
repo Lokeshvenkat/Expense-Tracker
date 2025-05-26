@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router";
 import { Toaster } from "react-hot-toast";
-import styles from "./App.module.css"; // Importing CSS module
+import styles from "./App.css";
 
 /**
  * App component serves as the root layout.
