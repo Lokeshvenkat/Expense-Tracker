@@ -1,22 +1,15 @@
-.App {
+/* Container layout for the entire application */
+.app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.app-title {
+/* Main title styling */
+.appTitle {
   margin-top: 50px;
-}
-
-.error-page {
-  text-align: center;
-}
-
-.error-page button {
-  cursor: pointer;
-}
-
-.text-capatilize{
-  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
 }
