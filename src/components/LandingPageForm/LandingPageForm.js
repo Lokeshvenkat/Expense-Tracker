@@ -12,7 +12,7 @@ import {
 } from "../../redux/userSlice";
 import validateLandingPageForm from "../../utilityFunctions/LandingPageFormMethods";
 import BudgetTable from "./BudgetTable";
-import "./LandingPageForm.css";
+import "./LandingPageForm.module.css";
 
 const LandingPageForm = () => {
   // Access the user slice of the Redux store to initialize form values
