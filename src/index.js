@@ -1,23 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
+import { Provider } from "react-redux";
+import store from "./redux/Store";
 import App from "./App";
 import ErrorPage from "./ErrorPage";
 import LandingPageForm from "./components/LandingPage/LandingPageForm";
 import TrackerPage from "./components/TrackerPage/TrackerPage";
-import store from "./redux/Store";
+import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-import "./index.css";
-
-// Exposing Redux store for Cypress testing
+// Expose Redux store for Cypress end-to-end testing
 if (window.Cypress) {
   window.store = store;
 }
 
-// Creating the application router with nested routes and error handling
+// Create the application router with routes and error handling
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -36,7 +34,7 @@ const appRouter = createBrowserRouter([
   },
 ]);
 
-// Rendering the app at the root of the DOM
+// Render the app in the root element
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -46,5 +44,5 @@ root.render(
   </React.StrictMode>
 );
 
-// Optional performance measurement
+// Report web vitals if needed
 reportWebVitals();
