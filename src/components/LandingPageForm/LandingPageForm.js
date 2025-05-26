@@ -11,7 +11,7 @@ import {
   updateUserName,
 } from "../../redux/userSlice";
 import validateLandingPageForm from "../../utilityFunctions/LandingPageFormMethods";
-import BudgetTable from "./BudgetTable";
+import BudgetTable from "./BudgetTable/BudgetTable";
 import "./LandingPageForm.module.css";
 
 const LandingPageForm = () => {
