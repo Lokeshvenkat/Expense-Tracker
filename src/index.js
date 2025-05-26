@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "./redux/Store";
 import App from "./App";
 import ErrorPage from "./ErrorPage/ErrorPage";
-import LandingPageForm from "./components/LandingPage/LandingPageForm";
+import LandingPageForm from "./components/LandingPageForm/LandingPageForm";
 import TrackerPage from "./components/TrackerPage/TrackerPage";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
