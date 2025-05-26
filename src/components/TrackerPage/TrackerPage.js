@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import AllBudgetInsights from "../AllBudgetInsights/AllBudgetInsights";
 import ExpenseForm from "../ExpenseForm/ExpenseForm";
-import TransactionTable from "../TransactionTable/TransactionTable";
+import TransactionTable from "../TransactionsTable/TransactionsTable";
 import "./TrackerPage.module.css"; 
 
 
