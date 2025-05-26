@@ -1,0 +1,34 @@
+/* Container for the whole transactions section */
+.transactions {
+  margin: 30px;           /* Adds space around the container */
+  margin-left: 80px;      /* Extra space on the left for alignment */
+  margin-right: 150px;    /* Extra space on the right for alignment */
+}
+
+/* Container for the filters area inside transactions */
+.transaction-filter {
+  display: flex;          /* Arrange filter pills horizontally */
+  column-gap: 30px;       /* Space between each filter group */
+}
+
+/* Container holding the individual filter pills */
+.filter-pills {
+  display: flex;          /* Arrange pills horizontally */
+  column-gap: 15px;       /* Space between each pill */
+  align-items: center;    /* Vertically center-align pills */
+}
+
+/* Style for each individual filter pill */
+.single-pill {
+  background-color: #ddd; /* Light grey background */
+  padding: 6px 18px;      /* Vertical and horizontal padding */
+  cursor: pointer;        /* Pointer cursor on hover to indicate clickable */
+  border-radius: 20px;    /* Rounded pill shape */
+}
+
+/* Style for the active/selected filter pill */
+.single-pill-active {
+  background-color: #bbb; /* Slightly darker grey to indicate active state */
+}
+
+

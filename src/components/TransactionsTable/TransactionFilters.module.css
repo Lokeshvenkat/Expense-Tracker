@@ -1,0 +1,30 @@
+/* Container for the filter section */
+.transaction-filter {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 80px;
+}
+
+/* Container for the pills */
+.filter-pills {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Base pill style */
+.single-pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background-color: #ccc;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Highlight active pill */
+.single-pill-active {
+  background-color: #4caf50;
+  color: white;
+}
